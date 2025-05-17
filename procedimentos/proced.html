@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luana Jeremias - Portfólio</title>
+  <link rel="stylesheet" href="proced.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">  <!--- fonte da letra -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- contato -->
+
+</head>
+<body>
+
+
+<!--CABEÇALHO FIXO -->
+<header>
+  <div class="header-container">
+    <div class="logo">Dra. Luana Jeremias</div>
+    <nav>
+      <ul>
+        <button onclick="history.back()" class="botao-voltar">Voltar</button> 
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!--BOTÃO DE VOLTAR-->
+<section class="voltar-section">
+  <button onclick="history.back()" class="botao-voltar">Voltar</button> 
+</section> 
+
+
+<!--PAGINA DE PROCEDIMENTOS FEITOS-->
+  <section  id="procedimentos" class="section">
+  <div class="conteudo">
+    <h2 id="procedimentos">Procedimentos realizados</h2>
+    <h4>passe o mouse na imagem para ver o antes</h4>
+    <div class="galeria">
+
+      <div class="procedimento">
+        <div class="img-container">
+          <img src="imagem/depois01.jpeg" alt="Depois">
+          <img src="imagem/antes01.jpeg" class="antes" alt="Antes">
+        </div>
+        <div class="descricao">
+          <strong>Fechamento de diastema</strong><br>
+          Trazendo estética ao dente.
+        </div>
+      </div>
+
+      <div class="procedimento">
+        <div class="img-container">
+          <img src="imagem/depois02.jpeg" alt="Depois">
+          <img src="imagem/antes02.jpeg" class="antes" alt="Antes">
+        </div>
+        <div class="descricao">
+          <strong>Bloco (onlay) em cerâmica</strong><br>
+          Devolvendo função e estética ao dente.
+        </div>
+      </div>
+
+            <div class="procedimento">
+        <div class="img-container">
+          <img src="imagem/depois03.jpeg" alt="Depois">
+          <img src="imagem/antes03.jpeg" class="antes" alt="Antes">
+        </div>
+        <div class="descricao">
+          <strong>pino de fibra de vidro reanatomizado + provisório </strong><br>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!--EFEITO DO MOUSE NA TELA-->
+  <div class="cursor-light"></div>
+  <script>
+  const light = document.querySelector('.cursor-light');
+  document.addEventListener('mousemove', (e) => {
+    light.style.left = `${e.clientX}px`;
+    light.style.top = `${e.clientY}px`;
+  });
+</script>
+
+</body>
+</html>
