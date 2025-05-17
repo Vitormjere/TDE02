@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luana Jeremias - Portfólio</title>
+  <link rel="stylesheet" href="contato.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">  <!--- fonte da letra -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- contato -->
+
+</head>
+<body>
+
+<!--CABEÇALHO FIXO -->
+<header>
+  <div class="header-container">
+    <div class="logo">Dra. Luana Jeremias</div>
+    <nav>
+      <ul>
+        <button onclick="history.back()" class="botao-voltar">Voltar</button> 
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- BOTÃO DE VOLTAR-->
+<section class="voltar-section">
+  <button onclick="history.back()" class="botao-voltar">Voltar</button> 
+</section> 
+
+
+  <!-- CONTATO -->
+<section id="contato" class="contato">
+  <div class="conteudo-contato">
+    <h2>Formas de Contato</h2>
+    <p>Você pode falar comigo através de qualquer uma das plataformas abaixo:</p>
+    <hr>
+    <div class="icones-contato">
+      <a href="https://www.instagram.com/dra.luanajeremias?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailto:luanamjeremias@hotmail.com" target="_blank" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/5541997769402" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <!-- <a href="https://www.linkedin.com/in/seuperfil" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i> -->
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!--EFEITO DO MOUSE NA TELA-->
+  <div class="cursor-light"></div>
+  <script>
+  const light = document.querySelector('.cursor-light');
+  document.addEventListener('mousemove', (e) => {
+    light.style.left = `${e.clientX}px`;
+    light.style.top = `${e.clientY}px`;
+  });
+</script>
+
+
+</body>
+</html>

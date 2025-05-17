@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luana Jeremias - Portfólio</title>
+  <link rel="stylesheet" href="home.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">  <!--- fonte da letra -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- contato -->
+
+</head>
+<body>
+
+
+<!--CABEÇALHO FIXO -->
+<header>
+  <div class="header-container">
+    <div class="NomePequeno">Dra. Luana Jeremias</div>
+    <nav>
+      <ul>
+        <li><a href="serviço/servico.html">Serviço</a></li>
+        <li><a href="procedimentos/proced.html">Procedimentos</a></li>
+        <li><a href="portifólio/portifolio.html">Portifólio</a></li>
+        <li><a href="Forma_de_contato/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- TELA DE INICIO -->
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Luana Jeremias</h1>
+      <h2>Cirurgiã dentista</h2>
+      <p>Especialista em implantodontia e odontologia digital</p>
+    </div>
+    <div class="hero-img">
+      <img src="imagem/Foto Luana.jpg" alt="Foto da Dra. Luana Jeremias">
+    </div>
+  </div>
+</section>
+
+
+  <!--EFEITO DO MOUSE NA TELA-->
+  <div class="cursor-light"></div>
+  <script>
+  const light = document.querySelector('.cursor-light');
+  document.addEventListener('mousemove', (e) => {
+    light.style.left = `${e.clientX}px`;
+    light.style.top = `${e.clientY}px`;
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+/* CABEÇALHO QUE FICA PARADO */
+header {
+  background-color: #091826;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {  /* nome na esquerda em cima */
+  color: #f5d042;
+  font-size: 1.3rem;
+  font-weight: bold;
+      font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* BOTÕES PRA MUDAR PRA OUTRA PAGINA */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+   margin-left: auto;
+}
+nav a {
+  position: relative;
+  color: #f5d042;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+   margin-left: auto;
+}
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #f5d042;
+  transition: width 0.3s ease;
+   margin-left: auto;
+}
+nav a:hover::after {
+  width: 100%;
+}
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+/* BOTÃO DE VOLTAR */
+.botao-voltar {
+  background-color: #f5d042;
+  color: #091826;
+  margin-left: auto;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 1rem;
+  transition: background-color 0.3s;
+}
+.botao-voltar:hover {
+  background-color: #fffab6;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 2em;
+}
+
+
+/* PAGINA DE INICIO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  background-color: #091826;
+  padding-top: 5rem; 
+  padding-left: 4rem;
+  padding-right: 4rem;
+  box-sizing: border-box;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 3rem;
+}
+.hero-text {
+  flex: 1;
+}
+.hero-text h1 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff; 
+    font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero-text h2 {
+  font-size: 1.8rem;
+  color: #ffffff; 
+  margin-bottom: 0.5rem;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero-img img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f5d042;
+}
+
+
+/* FORMATO DA LETRA E FUNDO (EXPERIENCIA E PROCEDIMENTOS) */
+.section {
+    display: flex;
+ /* align-items: center; */
+  /* justify-content: center; */
+  height: 100vh; 
+  background-color: #ffffff;
+  padding-top: 5rem; 
+  padding-left: 4rem;
+  padding-right: 4rem;
+  box-sizing: border-box;
+}
+.section h2 {
+  color: #091826;
+  margin: 0;
+  font-size: 4rem;
+    margin-bottom: 2px;
+    font-family: "Abril Fatface", serif;
+}
+.section h4 {
+    color: #091826;
+    margin: 0;
+    font-size: 1rem;
+    margin-bottom: 70px;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.section p, .section ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color : #091826;
+}
+.section ul {
+  padding-left: 1.5rem;
+} 
+.section strong {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color : #091826;
+    font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*EXPERIENCIA*/
+#sobre {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0
+
+}
+#sobre .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: right;
+  max-width: 1000px;
+}
+#sobre h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+ margin-top: -60px;
+}
+#sobre strong {
+  margin-top: 20px;
+  max-width: 900px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+
+/*PROCEDIMENTOS QUE ELA JA FEZ*/
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.procedimento {
+  width: 400px;
+  background-color: #091826;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  font-size: 14px;
+}
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+}
+.img-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+.img-container img.antes {
+  opacity: 0;
+  z-index: 2;
+}
+.img-container:hover img.antes {
+  opacity: 1;
+}
+.descricao {
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+.procedimento strong {
+    font-size: 1rem;
+  line-height: 0.5;
+  color : #ffffff;
+    font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* PORQUE SOU DENTISTA (TROQUEI COM EXPERIENCIA) */
+.experiencia {
+  padding: 60px 40px;
+  background-color: #091826;
+  color: #ffffff;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 60px;
+  scroll-margin-top: 100px;
+  height: 100vh;
+}
+.experiencia h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-family: "Abril Fatface", serif;
+  text-align: center;
+}
+hr {
+  border: none;
+  border-top: 1px solid #fcd34d;
+  width: 80%;
+  margin: 10px auto 30px auto;
+}
+.experiencia-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 40px;
+  padding-top: 30px;
+}
+.experiencia-conteudo p {
+    margin-bottom: 20px;
+  line-height: 2;
+  font-size: 1.2rem;
+      font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.texto-experiencia {
+  flex: 1 1 60%;
+  padding-right: 20px;
+  text-align: center;
+  padding-top: 75px;
+}
+.imagem-experiencia {
+  flex: 1 1 40%;
+  text-align: right;
+}
+.imagem-experiencia img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+/* FORMAS DE CONTATO */
+.contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #091826;
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+}
+.conteudo-contato {
+  max-width: 800px;
+}
+.conteudo-contato h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+      font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.conteudo-contato p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+      font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.icones-contato {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.icones-contato a {
+  color: white;
+  font-size: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.icones-contato a:hover {
+  color: #fcd34d;
+  transform: scale(1.2);
+}
+hr {
+  border: none;
+  border-top: 1px solid #fcd34d; 
+  width: 60%;                   
+  margin: 10px auto;            
+}
+
+
+/* DEPOIMENTO DE ALGUNS CLIENTES */
+.depoimentos {
+  padding: 40px 20px;
+  background-color: #ffffff; 
+  color: #091826;
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+
+  min-height: 100vh;     
+  box-sizing: border-box;
+  display: flex;   
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;   
+}
+.depoimentos h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.depoimentos-caixa {
+  background-color: #091826;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.depoimentos-imagens {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.depoimentos-imagens img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* SERVIÇOS QUE ELA FAZ */
+.servicos {
+  padding: 40px 20px;
+  background-color: #091826; 
+  color: #ffffff;
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+
+  min-height: 100vh;    
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.servicos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.servicos ul {
+  list-style-type: none;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+}
+.servicos ul li {
+  font-size: 1.2rem;
+  padding: 15px 0;
+  border-bottom: 1px solid #fcd34d;
+}
+.servicos ul li:last-child {
+  border-bottom: none;
+}
+.servicos p {
+    font-size: 1.4rem;
+  line-height: 1.6;
+  color : #ffffff;
+    font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* EFEITO MOUSE NA TELA */
+.cursor-light {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 700px;
+  height: 700px;
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(16, 199, 249, 0.4) 0%, rgba(0, 200, 255, 0) 80%);;
+  mix-blend-mode: overlay;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}

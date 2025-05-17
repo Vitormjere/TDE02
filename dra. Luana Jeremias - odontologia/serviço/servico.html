@@ -1,0 +1,62 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luana Jeremias - Portfólio</title>
+  <link rel="stylesheet" href="servico.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">  <!--- fonte da letra -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- contato -->
+
+</head>
+<body>
+
+
+<!--CABEÇALHO FIXO -->
+<header>
+  <div class="header-container">
+    <div class="logo">Dra. Luana Jeremias</div>
+    <nav>
+      <ul>
+        <button onclick="history.back()" class="botao-voltar">Voltar</button> 
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!--BOTÃO DE VOLTAR-->
+<section class="voltar-section">
+  <button onclick="history.back()" class="botao-voltar">Voltar</button> 
+</section>  
+
+
+<!--SERVIÇO QUE PODE FAZER NO CLIENTE-->
+<section id="serviço" class="servicos">
+  <h2>Serviços Oferecidos</h2>
+  <ul>
+    <li>Clínico geral (raspagens, profilaxias, restaurações)</li>
+    <li>Próteses (dentaduras, parciais, coroas, blocos)</li>
+    <li>Extrações</li>
+    <li>Implantes (unitários, múltiplos, protocolo)</li>
+    <li>Enxertos ósseos</li>
+    <li>Enxertos gengivais</li>
+  </ul>
+</section>
+
+
+  <!--EFEITO DO MOUSE NA TELA-->
+  <div class="cursor-light"></div>
+  <script>
+  const light = document.querySelector('.cursor-light');
+  document.addEventListener('mousemove', (e) => {
+    light.style.left = `${e.clientX}px`;
+    light.style.top = `${e.clientY}px`;
+  });
+</script>
+
+</body>
+</html>

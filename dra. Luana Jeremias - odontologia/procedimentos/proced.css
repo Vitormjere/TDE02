@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+/* CABEÇALHO FIXO */
+header {
+  background-color: #091826;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #f5d042;
+  font-size: 1.3rem;
+  font-weight: bold;
+      font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* FUNDO DA PAGINA E EFEITO DAS LETRAS */
+.section {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #091826;
+  padding-top: 5rem; 
+  padding-left: 4rem;
+  padding-right: 4rem;
+  box-sizing: border-box;
+}
+.section h2 {
+  color: #f5d042;
+  margin: 0;
+  font-size: 4rem;
+    margin-bottom: 2px;
+    font-family: "Abril Fatface", serif;
+}
+.section h4 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1rem;
+    margin-bottom: 70px;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.section p, .section ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color : #ffffff;
+}
+.section ul {
+  padding-left: 1.5rem;
+}
+
+
+/*PROCEDIMENTOS QUE ELA JA FEZ*/
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.procedimento {
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  font-size: 14px;
+}
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+}
+.img-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+.img-container img.antes {
+  opacity: 0;
+  z-index: 2;
+}
+.img-container:hover img.antes {
+  opacity: 1;
+}
+.descricao {
+  padding: 10px;
+  text-align: center;
+  color: #091826;
+}
+
+
+/* BOTÃO DE VOLTAR */
+.botao-voltar {
+  background-color: #f5d042;
+  color: #091826;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 1rem;
+  transition: background-color 0.3s;
+}
+.botao-voltar:hover {
+  background-color: #fffab6;
+}
+
+
+/* EFEITO MOUSE NA TELA */
+.cursor-light {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 700px;
+  height: 700px;
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(16, 199, 249, 0.4) 0%, rgba(0, 200, 255, 0) 80%);;
+  mix-blend-mode: overlay;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
